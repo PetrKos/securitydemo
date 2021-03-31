@@ -41,7 +41,6 @@ class ApplicationSecurityConfig(
             ?.loginPage("/login")?.permitAll()
     }
 
-    //this is how i get users from the db
     @Bean
     override fun userDetailsService(): UserDetailsService {
         val annaSmithUser = User.builder()
